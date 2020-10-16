@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+/*MENU*/
+
+.menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: #ffffff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+/*MATERIAS*/
+
+.header{
+    width: 500px;
+    margin: auto;
+    
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.nav{
+    margin-top: 100px;
+}
+.nav li a{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    width: 500px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    margin: 1px solid white;
+}
+
+.nav li a:hover{
+    background-color: #434343;
+}
+
+.nav >li {
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
